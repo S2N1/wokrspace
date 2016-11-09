@@ -1,0 +1,41 @@
+package randomgroupgenerator;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Generator {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the lenght of the group : ");
+		int size = sc.nextInt();
+
+		String[] group = new String[size];
+
+		for (int i = 0; i < group.length; i++) {
+			System.out.println("Enter names : ");
+			Scanner sc1 = new Scanner(System.in);
+			String names = sc1.nextLine();
+			if (group[i] == null) {
+				group[i] = names;
+
+			}
+
+		}
+
+		List<String> groupList = Arrays.asList(group);
+		Collections.shuffle(groupList);
+
+		List<String> team1 = groupList.subList(0, groupList.size() / 2);
+		List<String> team2 = groupList.subList(groupList.size() / 2, groupList.size());
+
+		System.out.println(team1.toString());
+		System.out.println(team2.toString());
+
+	}
+
+}

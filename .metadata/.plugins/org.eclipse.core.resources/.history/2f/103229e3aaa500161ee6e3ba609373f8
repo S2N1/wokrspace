@@ -1,0 +1,17 @@
+package randomgroupgenerator;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Generator {
+
+	public static void main(String[] args) {
+
+		ArrayList group = new ArrayList<>();
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the names for the groups : ");
+
+	}
+
+}

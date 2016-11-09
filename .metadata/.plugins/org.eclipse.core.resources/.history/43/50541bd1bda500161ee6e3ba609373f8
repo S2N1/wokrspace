@@ -1,0 +1,15 @@
+package exceptions;
+
+public class Demo {
+	public static void main(String[] args) {
+
+		Student s = new Student();
+
+//		s.setStudentAge(16);
+		
+		s.setStudentFirstName("Slavi");
+		
+
+	}
+
+}

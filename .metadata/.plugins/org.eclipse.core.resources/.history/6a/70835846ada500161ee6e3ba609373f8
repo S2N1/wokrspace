@@ -1,0 +1,28 @@
+package randomgroupgenerator;
+
+import java.util.Scanner;
+
+public class Generator {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the lenght of the group : ");
+		int size = sc.nextInt();
+
+		String[] group = new String[size];
+
+		for (int i = 0; i < group.length; i++) {
+			System.out.println("Enter names : ");
+			Scanner sc1 = new Scanner(System.in);
+			String names = sc1.nextLine();
+			if (group[i] != null) {
+				group[i] = names;
+				break;
+			}
+
+		}
+
+	}
+
+}
